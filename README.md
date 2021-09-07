@@ -49,6 +49,6 @@ example: eyk ssologin https://eyk.lab-two.ey-dedicated-internal.ey.io
 Example: eyk builds:create sergeyabrahamyandf/goroach:latest -a goroachapp --procfile='web: /main'
 
 ### Test the app
-run `eyk info` and note the URL. Then, access the https://URL/quote in the browser. The app will respond a json data generated using the quotes from the database.
+run `eyk info -a goroachapp` and note the URL. Then, access the https://URL/quote in the browser. The app will respond a json data generated using the quotes from the database.
 
 example: https://goroachapp.lab-two.ey-dedicated-internal.ey.io/quote/
